@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort & Filter</title>
+    <link rel="stylesheet" href="style/css/sort.css">
+</head>
+<body>
+    <header>  
+        <a href="#home" class="logo">Tour Mongolia</a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">About us</a></li>
+                <li><a href="#mongolia">Mongolia</a></li>
+                <li><a href="#tours">Tours</a></li>
+                <li><a href="#information">Information</a></li>
+                <li>
+                    <div class="lang-selector icons">
+                        <img src="style/img/icons/language.png" alt="" >
+                    </div>
+                </li>
+                <li>
+                    <div class="profile icons">
+                        <img src="style/img/icons/user.png" alt="" >
+                    </div>
+                </li>
+            </ul>      
+         </nav>
+    </header>
+    <main>  
+        <aside>
+            <div class="title">Sort & Filter</div>
+            <select name="" id="sort">
+                <option value="">Popularity: Most popular first</option>
+                <option value="">Total price: Highest first</option>
+                <option value="">Total price: Lowest first</option>
+                <option value="">Duration: Shortest first</option>
+                <option value="">Duration: Longest first</option>
+            </select>
+            <div class="filters">
+                <div class="length-filter">
+                    <h4 class="fiter-tag">Length</h4>
+                    <div class="range-price">min. 1 day            
+                    </div>
+                    <div class="slider-container">
+                        <input type="range" min="1" max="21" value="21" id="myRange" name="">
+                    </div>
+                </div>
+                <div class="price-filter">
+                    <h5 class="filter-tag">Price</h5>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                    <div class="range-price">      
+                        <label for="min">Min</label>
+                        <input type="number" name="min" value="0">      
+                        <label for="max">Max</label>
+                        <input type="number" name="max" value="10000">      
+                    </div>
+                    <div class="slider-container">
+                        <input type="range" min="0" max="10000" value="10000" id="myRange" name="">
+                        <!--<input type="range" min="1" max="21" value="21" id="myRange" name="">-->
+                    </div>
+                    <div class="adventure-type">
+                        <h5 class="filter-tag">Adventure type</h5>
+                        <label for="container">
+                            <input type="checkbox" name="" id="" class="filter">Group
+                        </label>
+                        <label for="container">
+                            <input type="checkbox" name="" id="" class="filter">Private
+                        </label>
+                    </div>
+                    <div class="adventure-type">
+                        <h5 class="filter-tag">Adventure Style</h5>
+                        <label for="container">
+                            <input type="checkbox" name="" id="" class="filter">Explorer
+                        </label> <br>
+                        <label for="container">
+                            <input type="checkbox" name="" id="" class="filter">Cultural
+                        </label><br>
+                        <label for="container">
+                            <input type="checkbox" name="" id="" class="filter">Festival & event
+                        </label> <br>
+                        <label for="container">
+                            <input type="checkbox" name="" id="" class="filter">Hiking
+                        </label><br>
+                        <label for="container">
+                            <input type="checkbox" name="" id="" class="filter">Riding horse
+                        </label> <br>
+                        <label for="container">
+                            <input type="checkbox" name="" id="" class="filter">Dog sled
+                        </label><br>
+                        <label for="container">
+                            <input type="checkbox" name="" id="" class="filter">Sailing
+                        </label>
+                    </div>
+                    <div class="adventure-type">
+                        <h5 class="filter-tag">Cities</h5>
+                        <label for="container">
+                            <input type="checkbox" name="" id="" class="filter">Arkhangai
+                        </label> <br>
+                        <label for="container">
+                            <input type="checkbox" name="" id="" class="filter">Khuvsgul
+                        </label><br>
+                        <label for="container">
+                            <input type="checkbox" name="" id="" class="filter">Baynkhongor
+                        </label> <br>
+                        <label for="container">
+                            <input type="checkbox" name="" id="" class="filter">Bayan - Ulgii
+                        </label><br>
+                        <label for="container">
+                            <input type="checkbox" name="" id="" class="filter">Uvs
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <section class="items">
+            <article>
+                <div>
+                    <img src="" alt="">
+                </div>
+                <div>
+                    <h3 class="item-title">The essence of Mongolia - 10 days</h3>
+                    <div class="review"></div>
+                    <dl>
+                        <dt>Destinations</dt>
+                        <dl>Arkhangai, Khuvsgul, Ulaanbaatar</dl>
+                        <dt>Travel style</dt>
+                        <dl>Explorer, Family, Private</dl>
+                        <dt>Operated in</dt>
+                        <dl>English</dl>
+
+                    </dl>
+                </div>
+                <div>
+                    <dt>Tour length</dt>
+                    <dl>10 days</dl>
+                    <dt>Price per day</dt>
+                    <dl>$109</dl>
+                    <button>View Tour</button>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
