@@ -74,3 +74,9 @@ const data = {
     ],
   },
 };
+
+function ongroupchange(e){
+  let filteredTours = data.filter(data.tours.group);
+
+  console.log(filteredTours);
+}

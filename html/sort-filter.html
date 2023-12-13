@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sort & Filter</title>
-    <link rel="stylesheet" href="style/css/sort.css" />
+    <link rel="stylesheet" href="/TourMongolia/style/css/sort.css" />
+
+    <script src="/TourMongolia/scripts/main.js"></script>
   </head>
   <body>
     <header>
@@ -79,7 +81,13 @@
             <div class="adventure-type">
               <h4 class="filter-tag">Adventure type</h4>
               <label class="filter-check">
-                <input type="checkbox" name="" id="" class="filter" />Group
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="filter"
+                  onchange="ongroupchange()"
+                />Group
               </label>
               <br />
               <label>
@@ -160,30 +168,42 @@
         </div>
       </aside>
       <section class="items">
-        <article>
+        <li class="tour-card">
           <div class="tour-card-hero">
-            <img src="" alt="" />
+            <img src="style/img/hero.jpg" alt="" />
           </div>
-          <div>
+          <div class="tour-card-content">
             <h3 class="item-title">The essence of Mongolia - 10 days</h3>
             <div class="review"></div>
-            <dl>
-              <dt>Destinations</dt>
-              <dl>Arkhangai, Khuvsgul, Ulaanbaatar</dl>
-              <dt>Travel style</dt>
-              <dl>Explorer, Family, Private</dl>
-              <dt>Operated in</dt>
-              <dl>English</dl>
+            <dl class="values">
+              <dt class="values-title">Destinations</dt>
+              <dd class="values-content">Arkhangai, Khuvsgul, Ulaanbaatar</dd>
+              <dt class="values-title">Travel style</dt>
+              <dd class="values-content">Explorer, Family, Private</dd>
+              <dt class="values-title">Operated in</dt>
+              <dd class="values-content">English</dd>
+              <dt class="values-title">Operator</dt>
+              <dd class="values-content">Tenger Travel</dd>
             </dl>
           </div>
-          <div>
-            <dt>Tour length</dt>
-            <dl>10 days</dl>
-            <dt>Price per day</dt>
-            <dl>$109</dl>
-            <button>View Tour</button>
+          <div class="tour-card-details">
+            <div class="card-detail-container">
+              <dl class="detail-item-duration">
+                <dt class="detail-title">Duration</dt>
+                <dd class="detail-value">12 days</dd>
+              </dl>
+              <dl class="detail-item-perday">
+                <dt class="detail-title">Price Per day</dt>
+                <dd class="detail-value">$173</dd>
+              </dl>
+              <dl class="detail-item-price">
+                <dt class="detail-title"></dt>
+                <dd class="detail-value">$2345</dd>
+              </dl>
+            </div>
           </div>
-        </article>
+          <button>View Tour</button>
+        </li>
       </section>
     </main>
     <footer></footer>
